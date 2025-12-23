@@ -1,8 +1,6 @@
-You can copy–paste this directly into a file named README.md in your project root.
-
 # Real-time Transaction & Audit Log System
 
-## 📌 Project Overview
+## Project Overview
 This project implements a secure peer-to-peer fund transfer system with an immutable audit log.  
 It simulates real-world transaction handling where money is transferred atomically between users and every transaction is permanently recorded for auditing purposes.
 
@@ -10,7 +8,7 @@ The system is designed with a strong focus on **data consistency, security, and 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Node.js** with Express.js
 - **PostgreSQL** database
 - **Prisma ORM**
@@ -20,7 +18,7 @@ The system is designed with a strong focus on **data consistency, security, and 
 
 ---
 
-## ✨ Features
+## Features
 
 ### Backend
 - User registration and login
@@ -37,7 +35,7 @@ The system is designed with a strong focus on **data consistency, security, and 
 
 ---
 
-## 🗄️ Database Schema
+## Database Schema
 
 ### User
 - `id`
@@ -56,7 +54,7 @@ The system is designed with a strong focus on **data consistency, security, and 
 
 ---
 
-## 🔐 API Endpoints
+## API Endpoints
 
 ### Register User
 
@@ -86,7 +84,7 @@ Authorization: Bearer <JWT_TOKEN>
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### 1️⃣ Clone the Repository
 ```bash
@@ -115,7 +113,7 @@ Server runs at:
 
 http://localhost:5000
 
-🌐 Frontend Usage
+Frontend Usage
 
 Navigate to:
 
@@ -132,7 +130,7 @@ Click Transfer
 
 Transaction history updates instantly
 
-🧪 Testing
+Testing
 
 APIs tested using VS Code REST Client
 
@@ -140,7 +138,7 @@ Database verified using Prisma Studio
 
 Frontend tested via browser
 
-🧠 Engineering Highlights
+Engineering Highlights
 
 Uses database transactions to ensure atomic debit & credit
 
@@ -152,31 +150,8 @@ Clear separation of backend and frontend logic
 
 AI-assisted generation of transaction boilerplate and frontend structure
 
-👨‍💻 Author
+Author
 
 Satyam Shukla
 B.Tech Computer Engineering
 Backend & Full Stack Development
-
-
----
-
-## ✅ FINAL CONFIRMATION
-
-This README:
-- ✔ Matches assignment instructions
-- ✔ Explains backend + frontend clearly
-- ✔ Looks professional to evaluators
-- ✔ Is interview-ready
-
-You can now:
-- Push to GitHub
-- Submit confidently
-- Explain it cleanly in interviews
-
-If you want, I can still help with:
-- Submission email/message
-- Interview explanation (2–3 minutes)
-- Final GitHub repo review
-
-Just tell me 👍
