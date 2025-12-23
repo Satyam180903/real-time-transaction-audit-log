@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Transaction & Audit Log</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    input, button {
+      padding: 8px;
+      margin: 5px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Fund Transfer</h2>
+
+  <label>JWT Token:</label><br />
+  <input type="text" id="token" placeholder="Paste JWT Token here" size="80" /><br /><br />
+
+  <label>Receiver ID:</label><br />
+  <input type="text" id="receiverId" placeholder="Receiver User ID" /><br /><br />
+
+  <label>Amount:</label><br />
+  <input type="number" id="amount" placeholder="Amount" /><br /><br />
+
+  <button onclick="transfer()">Transfer</button>
+
+  <p id="status"></p>
+
+  <h2>Transaction History</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Sender</th>
+        <th>Receiver</th>
+        <th>Amount</th>
+        <th>Status</th>
+        <th>Timestamp</th>
+      </tr>
+    </thead>
+    <tbody id="history"></tbody>
+  </table>
+
+  <!-- External JS file -->
+  <script src="script.js"></script>
+
+</body>
+</html>

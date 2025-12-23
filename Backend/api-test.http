@@ -1,0 +1,50 @@
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+  "name": "Satyam",
+  "email": "satyam@test.com",
+  "password": "password123"
+}
+
+###
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+  "name": "Receiver",
+  "email": "receiver@test.com",
+  "password": "password123"
+}
+
+###
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+  "email": "satyam@test.com",
+  "password": "password123"
+}
+
+###
+POST http://localhost:5000/transfer
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzNTVjZWUxNS05MmQ4LTQ0NWUtYmM3Mi1lY2ViYzliNDY5OTMiLCJpYXQiOjE3NjYzMDYxODAsImV4cCI6MTc2NjM5MjU4MH0.mn2L1ABj1t4jwJseSdFTr8rwYh4Ts7jOzeNrI3ne3WQ
+Content-Type: application/json
+
+{
+  "receiverId": "ecdf1966-85bc-4e87-8f2e-96ec200d82ac",
+  "amount": 200
+}
+
+###
+GET http://localhost:5000/audit
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzNTVjZWUxNS05MmQ4LTQ0NWUtYmM3Mi1lY2ViYzliNDY5OTMiLCJpYXQiOjE3NjYzMDYxODAsImV4cCI6MTc2NjM5MjU4MH0.mn2L1ABj1t4jwJseSdFTr8rwYh4Ts7jOzeNrI3ne3WQ
+
+###
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+  "email": "satyam@test.com",
+  "password": "password123"
+}
